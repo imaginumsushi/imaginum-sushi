@@ -2,148 +2,170 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Cardápio — Combinados, Temakis e Hot Rolls em Curitiba',
-  description: 'Cardápio completo do Imaginum Sushi: combinados de 20 a 50 peças, temakis artesanais, sashimis frescos, hot rolls, entradas e bebidas. Delivery em Curitiba.',
+  title: 'Cardápio — Combinados, Temakis, Hot Rolls e Sashimis em Curitiba',
+  description: 'Cardápio completo do Imaginum Sushi: combinados, temakis artesanais, hot rolls, sashimis, yakissoba, entradas e bebidas. Delivery em Curitiba.',
   alternates: { canonical: '/cardapio' },
 }
 
 const cardapio = [
   {
-    secao: 'Combinados',
-    desc: 'Seleções especiais de sushi e sashimi com ingredientes frescos',
-    emoji: '🍱',
+    secao: 'Happy Hour — Seg e Ter (Consumo no Local)',
+    desc: 'Promoções especiais às segundas e terças para consumo no salão',
+    emoji: '🍻',
+    cor: 'var(--blue)',
     itens: [
-      { nome: 'Combinado Executivo 20 peças', desc: '10 uramakis + 6 niguiris + 4 sashimis de salmão', preco: 'R$ 59,90' },
-      { nome: 'Combinado Especial 30 peças', desc: 'Seleção premium com hot roll, philadelphia e sashimi', preco: 'R$ 89,90' },
-      { nome: 'Combinado Família 50 peças', desc: 'Variedade completa para compartilhar', preco: 'R$ 139,90' },
+      { nome: 'Ceviche', desc: 'Polvo, salmão, tilápia, cheiro verde e cebola roxa com molho da casa. 200g', preco: 'R$ 59,00' },
+      { nome: 'Hot Balls — 4 unidades', desc: 'Salmão e especiarias em massa crocante', preco: 'R$ 19,00' },
+      { nome: 'Hot Balls — 8 unidades', desc: 'Salmão e especiarias em massa crocante', preco: 'R$ 39,00' },
+      { nome: 'Lakasa 16 Peças', desc: 'Uramakis: 2 Filadélfia, 2 Filadélfia Especial, 2 Ebi Especial, 2 Imaginum, 4 Hot Special One, 2 Niguiris de salmão e 2 Joe braseado', preco: 'R$ 79,00' },
+      { nome: 'Rock Shrimp Spicy', desc: 'Camarões em tempurá, maionese de Sriracha, ovas e cebolinha', preco: 'R$ 69,00' },
+      { nome: 'Trilogia de Joe', desc: '3 pares a sua escolha', preco: 'R$ 65,00' },
+      { nome: 'Tuna Tartar', desc: 'Mix de atum, cebola roxa, leite de coco, coentros e especiarias com chips de banana da terra', preco: 'R$ 69,00' },
+      { nome: 'Uramaki Misto', desc: '8 unid — Filadélfia, 2 Filadélfia Especial, 2 Imaginum, 2 Ebi Especial', preco: 'R$ 43,00' },
+      { nome: 'Yakissoba Frango', desc: 'Massa fresca com legumes', preco: 'R$ 54,00' },
     ],
   },
   {
-    secao: 'Temakis',
-    desc: 'Cones artesanais de alga com arroz japonês preparados na hora',
-    emoji: '🍣',
-    itens: [
-      { nome: 'Temaki Salmão', desc: 'Cone de alga com arroz japonês e salmão fresco', preco: 'R$ 22,90' },
-      { nome: 'Temaki Philadelphia', desc: 'Salmão, cream cheese e cebolinha', preco: 'R$ 24,90' },
-      { nome: 'Temaki Camarão Empanado', desc: 'Camarão crocante, cream cheese e molho especial', preco: 'R$ 26,90' },
-      { nome: 'Temaki Vegetariano', desc: 'Pepino, abacate, cream cheese e gergelim', preco: 'R$ 20,90' },
-    ],
-  },
-  {
-    secao: 'Hot Rolls',
-    desc: 'Uramakis empanados e crocantes, servidos quentinhos',
-    emoji: '🔥',
-    itens: [
-      { nome: 'Hot Roll Salmão (8 peças)', desc: 'Uramaki frito com recheio de salmão e cream cheese', preco: 'R$ 32,90' },
-      { nome: 'Hot Roll Atum (8 peças)', desc: 'Uramaki frito com atum e cebolinha', preco: 'R$ 34,90' },
-      { nome: 'Hot Roll Camarão (8 peças)', desc: 'Uramaki frito com camarão e cream cheese', preco: 'R$ 36,90' },
-    ],
-  },
-  {
-    secao: 'Sashimis',
-    desc: 'Fatias de peixe fresco fatiadas na hora, sem arroz',
-    emoji: '🐟',
-    itens: [
-      { nome: 'Sashimi de Salmão (10 fatias)', desc: 'Salmão fresco fatiado na hora', preco: 'R$ 44,90' },
-      { nome: 'Sashimi de Atum (10 fatias)', desc: 'Atum fresco premium', preco: 'R$ 49,90' },
-      { nome: 'Sashimi Misto (10 fatias)', desc: 'Mix de salmão e atum', preco: 'R$ 47,90' },
-    ],
-  },
-  {
-    secao: 'Entradas',
-    desc: 'Para começar a refeição com o melhor da culinária japonesa',
+    secao: 'Entradas Frios e Quentes',
+    desc: 'Para começar com o melhor da culinária japonesa',
     emoji: '🫘',
-    itens: [
-      { nome: 'Edamame', desc: 'Grãos de soja cozidos no vapor com sal', preco: 'R$ 14,90' },
-      { nome: 'Missoshiru', desc: 'Sopa de misso com tofu e cebolinha', preco: 'R$ 12,90' },
-      { nome: 'Guioza (6 unidades)', desc: 'Pastéis japoneses grelhados com carne e legumes', preco: 'R$ 24,90' },
-    ],
+    cor: 'var(--green)',
+    itens: [],
+  },
+  {
+    secao: 'Hots e Temakis',
+    desc: 'Hot rolls crocantes e temakis artesanais preparados na hora',
+    emoji: '🔥',
+    cor: 'var(--gold-dk)',
+    itens: [],
+  },
+  {
+    secao: 'Joe e Niguiri',
+    desc: 'Peças clássicas da culinária japonesa',
+    emoji: '🍣',
+    cor: 'var(--gold)',
+    itens: [],
+  },
+  {
+    secao: 'Uramaki e Hossomaki',
+    desc: 'Rolinhos tradicionais com ingredientes frescos',
+    emoji: '🍱',
+    cor: 'var(--blue)',
+    itens: [],
+  },
+  {
+    secao: 'Sashimis e Carpaccios',
+    desc: 'Fatias de peixe fresco fatiadas na hora',
+    emoji: '🐟',
+    cor: 'var(--green)',
+    itens: [],
+  },
+  {
+    secao: 'Combinados de Salmão',
+    desc: 'Combinados especiais com salmão fresco',
+    emoji: '🍱',
+    cor: 'var(--gold)',
+    itens: [],
+  },
+  {
+    secao: 'Combinados Mistos',
+    desc: 'Variedade de peças selecionadas',
+    emoji: '🍣',
+    cor: 'var(--gold-dk)',
+    itens: [],
+  },
+  {
+    secao: 'Yakissoba',
+    desc: 'Massa fresca com legumes e proteína',
+    emoji: '🍜',
+    cor: 'var(--blue)',
+    itens: [],
+  },
+  {
+    secao: 'Bentô Box',
+    desc: 'Caixas completas para um almoço especial',
+    emoji: '📦',
+    cor: 'var(--green)',
+    itens: [],
+  },
+  {
+    secao: 'Sobremesas',
+    desc: 'Para finalizar com doçura',
+    emoji: '🍡',
+    cor: 'var(--gold)',
+    itens: [],
   },
   {
     secao: 'Bebidas',
-    desc: 'Bebidas selecionadas para acompanhar sua refeição',
-    emoji: '🍵',
-    itens: [
-      { nome: 'Saquê Tradicional', desc: 'Bebida japonesa de arroz', preco: 'R$ 18,90' },
-      { nome: 'Chá Verde (500ml)', desc: 'Chá verde japonês gelado ou quente', preco: 'R$ 9,90' },
-      { nome: 'Refrigerante Lata', desc: 'Diversas opções', preco: 'R$ 7,90' },
-      { nome: 'Água Mineral (500ml)', desc: 'Com ou sem gás', preco: 'R$ 5,90' },
-    ],
+    desc: 'Vinhos, sakê e bebidas selecionadas',
+    emoji: '🍷',
+    cor: 'var(--blue)',
+    itens: [],
   },
 ]
-
-const schemaMenu = {
-  '@context': 'https://schema.org',
-  '@type': 'Menu',
-  '@id': 'https://www.imaginumsushi.com.br/cardapio/#catalog',
-  name: 'Cardápio Imaginum Sushi',
-  url: 'https://www.imaginumsushi.com.br/cardapio',
-  inLanguage: 'pt-BR',
-  hasMenuSection: cardapio.map(s => ({
-    '@type': 'MenuSection',
-    name: s.secao,
-    description: s.desc,
-    hasMenuItem: s.itens.map(item => ({
-      '@type': 'MenuItem',
-      name: item.nome,
-      description: item.desc,
-      offers: { '@type': 'Offer', price: item.preco.replace('R$ ', '').replace(',', '.'), priceCurrency: 'BRL' },
-    })),
-  })),
-}
 
 export default function Cardapio() {
   return (
     <>
-      <Script id="schema-menu" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMenu) }} />
       <Nav />
-      <main style={{ paddingTop: '5rem', minHeight: '100vh' }}>
-        <section className="section" style={{ paddingBottom: '2rem' }}>
+      <main style={{paddingTop:'5rem',minHeight:'100vh'}}>
+        <section className="section" style={{paddingBottom:'2rem'}}>
           <div className="container">
             <p className="tag-pill">Japanese Fusion Food · Curitiba</p>
             <h1>Cardápio <em className="gold">Imaginum Sushi</em></h1>
-            <p style={{ marginTop: '1rem', maxWidth: 560, fontSize: '1.05rem' }}>
-              Ingredientes frescos selecionados diariamente. Disponível no salão, para retirada ou delivery pelo nosso app.
+            <p style={{marginTop:'1rem',maxWidth:560,fontSize:'1.05rem'}}>
+              Ingredientes frescos selecionados diariamente. Disponível no salão, para retirada ou delivery pelo nosso app e iFood.
             </p>
           </div>
         </section>
 
+        <div className="wave-bar" />
+
         {cardapio.map((s, i) => (
-          <section key={i} className={`section${i % 2 === 1 ? ' section-cream' : ''}`} style={{ paddingTop: '2.5rem', paddingBottom: '2.5rem' }}>
+          <section key={i} className={'section' + (i % 2 === 1 ? ' section-dark' : '')} style={{paddingTop:'2.5rem',paddingBottom:'2.5rem'}}>
             <div className="container">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-                <span style={{ fontSize: '1.5rem' }}>{s.emoji}</span>
+              <div style={{display:'flex',alignItems:'center',gap:'0.75rem',marginBottom:'1.5rem'}}>
+                <span style={{fontSize:'1.5rem'}}>{s.emoji}</span>
                 <div>
-                  <h2 style={{ fontSize: '1.6rem', color: i % 2 === 1 ? 'var(--black)' : 'var(--white)' }}>{s.secao}</h2>
-                  <p style={{ fontSize: '0.85rem', marginTop: 0, color: i % 2 === 1 ? 'var(--gray-700)' : 'rgba(255,255,255,0.5)' }}>{s.desc}</p>
+                  <h2 style={{fontSize:'1.5rem',color:i%2===1?'var(--white)':'var(--black)'}}>{s.secao}</h2>
+                  <p style={{fontSize:'0.84rem',marginTop:0,color:i%2===1?'rgba(255,255,255,0.45)':'var(--gray-500)'}}>{s.desc}</p>
                 </div>
               </div>
-              <div className="cardapio-grid">
-                {s.itens.map((item, j) => (
-                  <article key={j} className="prato-card" style={{ background: i % 2 === 1 ? 'rgba(0,0,0,0.04)' : undefined, borderColor: i % 2 === 1 ? 'rgba(0,0,0,0.1)' : undefined }}>
-                    <div className="prato-body" style={{ padding: '1.25rem' }}>
-                      <h3 style={{ color: i % 2 === 1 ? 'var(--black)' : 'var(--white)' }}>{item.nome}</h3>
-                      <p style={{ color: i % 2 === 1 ? 'var(--gray-700)' : undefined }}>{item.desc}</p>
-                      <div className="prato-footer" style={{ marginTop: '1rem' }}>
-                        <span className="prato-preco">{item.preco}</span>
+              {s.itens.length > 0 ? (
+                <div className="cardapio-grid">
+                  {s.itens.map((item, j) => (
+                    <article key={j} className="prato-card" style={i%2===1?{background:'rgba(255,255,255,0.04)'}:{background:'rgba(0,0,0,0.04)',borderColor:'rgba(0,0,0,0.1)'}}>
+                      <div className="prato-body" style={{padding:'1.25rem'}}>
+                        <h3 style={{color:i%2===1?'var(--white)':'var(--black)'}}>{item.nome}</h3>
+                        <p style={{color:i%2===1?'rgba(255,255,255,0.5)':'var(--gray-700)'}}>{item.desc}</p>
+                        <div className="prato-footer" style={{marginTop:'1rem'}}>
+                          <span className="prato-preco">{item.preco}</span>
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
+                    </article>
+                  ))}
+                </div>
+              ) : (
+                <p style={{color:'rgba(255,255,255,0.35)',fontStyle:'italic',fontSize:'0.9rem'}}>
+                  Em breve — acesse nosso app ou ligue (41) 3082-3093 para conferir os itens disponíveis.
+                </p>
+              )}
             </div>
           </section>
         ))}
 
-        <section className="section" style={{ paddingTop: '2rem', paddingBottom: '3rem', textAlign: 'center' }}>
+        <div className="wave-bar" />
+
+        <section className="section" style={{paddingTop:'2rem',paddingBottom:'3rem',textAlign:'center'}}>
           <div className="container">
-            <h2 style={{ marginBottom: '1rem' }}>Pronto para pedir?</h2>
-            <p style={{ marginBottom: '2rem' }}>Delivery pelo app, iFood ou ligue para reservar sua mesa.</p>
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <h2 style={{marginBottom:'1rem'}}>Pronto para pedir?</h2>
+            <p style={{marginBottom:'2rem'}}>Delivery pelo app, iFood ou ligue para reservar sua mesa.</p>
+            <div style={{display:'flex',gap:'1rem',justifyContent:'center',flexWrap:'wrap'}}>
               <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="btn btn-gold">App Store</a>
-              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Google Play</a>
+              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" className="btn btn-blue">Google Play</a>
               <a href="tel:+554130823093" className="btn btn-outline">(41) 3082-3093</a>
             </div>
           </div>
