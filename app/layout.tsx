@@ -51,9 +51,7 @@ const schemaRestaurant = {
   },
   geo: { '@type': 'GeoCoordinates', latitude: -25.424, longitude: -49.266 },
   openingHoursSpecification: [
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '11:30', closes: '14:30' },
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday'], opens: '11:30', closes: '15:00' },
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], opens: '18:00', closes: '23:30' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], opens: '11:30', closes: '23:30' },
   ],
   servesCuisine: ['Japonesa', 'Sushi', 'Temaki', 'Japanese Fusion'],
   priceRange: '$$',
@@ -75,7 +73,7 @@ const schemaFaq = {
   mainEntity: [
     { '@type': 'Question', name: 'O Imaginum Sushi fica em qual endereço em Curitiba?', acceptedAnswer: { '@type': 'Answer', text: 'O Imaginum Sushi fica na Rua Tabajaras, 714, Vila Izabel, Curitiba/PR.' } },
     { '@type': 'Question', name: 'Qual o telefone do Imaginum Sushi?', acceptedAnswer: { '@type': 'Answer', text: 'O telefone do Imaginum Sushi é (41) 3082-3093. Atendemos também pelo WhatsApp.' } },
-    { '@type': 'Question', name: 'Qual o horário de funcionamento do Imaginum Sushi?', acceptedAnswer: { '@type': 'Answer', text: 'Almoço: segunda a sexta das 11h30 às 14h30; sábados e feriados das 11h30 às 15h. Jantar: segunda a sábado das 18h às 23h30.' } },
+    { '@type': 'Question', name: 'Qual o horário de funcionamento do Imaginum Sushi?', acceptedAnswer: { '@type': 'Answer', text: 'Funcionamos de segunda a sábado das 11h30 às 23h30. Aos domingos estamos fechados.' } },
     { '@type': 'Question', name: 'O Imaginum Sushi faz delivery em Curitiba?', acceptedAnswer: { '@type': 'Answer', text: 'Sim! Temos app próprio disponível na App Store e Google Play, e também estamos no iFood.' } },
     { '@type': 'Question', name: 'O Imaginum Sushi aceita reservas?', acceptedAnswer: { '@type': 'Answer', text: 'Sim, aceitamos reservas pelo (41) 3082-3093 e pelo WhatsApp. Recomendamos reservar com antecedência nos fins de semana.' } },
     { '@type': 'Question', name: 'Quais formas de pagamento o Imaginum Sushi aceita?', acceptedAnswer: { '@type': 'Answer', text: 'Aceitamos dinheiro, Pix, cartão de crédito e débito de todas as bandeiras.' } },
