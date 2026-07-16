@@ -24,6 +24,7 @@ export default function Footer() {
             <p>Rua Tabajaras, 714</p>
             <p>Vila Izabel — Curitiba/PR</p>
             <a href="tel:+554130823093">(41) 3082-3093</a>
+            <a href="https://wa.me/554130823093" target="_blank" rel="noopener noreferrer">WhatsApp 📲</a>
             <p style={{marginTop:'0.75rem'}}>Seg–Sáb: 11h30–23h30</p>
             <p>Domingo: Fechado</p>
           </div>
