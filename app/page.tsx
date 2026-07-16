@@ -32,14 +32,14 @@ export default function Home() {
               Combinados frescos, temakis artesanais, hot rolls e sashimis preparados com ingredientes selecionados diariamente. Almoço e jantar na Rua Tabajaras, 714.
             </p>
             <div className="hero-actions">
-              <Link href="/cardapio" className="btn btn-gold">Ver cardápio completo</Link>
-              <Link href="/reservas" className="btn btn-outline">Reservar mesa</Link>
+              <a href="https://imaginumsushi.menudino.com/" target="_blank" rel="noopener noreferrer" className="btn btn-gold">Peça Aqui 🛒</a>
+              <Link href="/cardapio" className="btn btn-outline">Ver cardápio</Link>
             </div>
             <div className="hero-bar">
               <div className="hero-bar-item"><strong>Rua Tabajaras, 714</strong>Vila Izabel — Curitiba/PR</div>
               <div className="hero-bar-item"><strong>(41) 3082-3093</strong>Reservas e WhatsApp</div>
               <div className="hero-bar-item"><strong>Seg–Sáb</strong>11h30–23h30</div>
-              <div className="hero-bar-item"><strong>App próprio</strong>App Store · Google Play</div>
+              <div className="hero-bar-item"><strong>Delivery</strong>menudino.com</div>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
               <h2 style={{color:'var(--black)',marginBottom:'1.25rem'}}>Japanese Fusion Food no coração de Curitiba</h2>
               <p style={{marginBottom:'1rem'}}>O Imaginum Sushi nasceu da paixão pela culinária japonesa e do desejo de trazer uma experiência gastronômica completa para Curitiba. Localizado na Rua Tabajaras, 714, na Vila Izabel, somos referência em Japanese Fusion Food na cidade.</p>
               <p style={{marginBottom:'1rem'}}>Trabalhamos com ingredientes frescos selecionados diariamente — salmão, atum e frutos do mar que garantem o sabor autêntico em cada combinado, temaki e hot roll que preparamos.</p>
-              <p>Além do salão sofisticado, temos app próprio disponível na App Store e Google Play, e delivery pelo iFood.</p>
+              <p>Além do salão sofisticado, oferecemos delivery pelo nosso site e pelo iFood.</p>
               <div className="sobre-stats">
                 <div className="stat"><div className="stat-num">4.8★</div><div className="stat-label">Nota no Google</div></div>
                 <div className="stat"><div className="stat-num">App</div><div className="stat-label">iOS e Android</div></div>
