@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Cardápio — Imaginum Sushi | Culinária Japonesa em Curitiba',
@@ -56,7 +55,7 @@ const cardapio = [
       { nome: 'Joe Kappa', desc: 'Envolvido em pepino japonês, kani e alho poró — 2 unid', preco: 'R$ 14,00' },
       { nome: 'Joe Passion', desc: 'Salmão, ovas e limão — 2 unid', preco: 'R$ 26,00' },
       { nome: 'Joe Peixe Branco', desc: 'Peixe branco com lichia e amêndoas', preco: 'R$ 19,00' },
-      { nome: 'Joe Salmão', desc: 'Pastinha de salmão com cream cheese e alho poró coberto com cebolinha e gergelim', preco: 'a partir de R$ 13,00' },
+      { nome: 'Joe Salmão', desc: 'Pastinha de salmão com cream cheese e alho poró, cebolinha e gergelim', preco: 'a partir de R$ 13,00' },
       { nome: 'Joe Salmão Braseado', desc: 'Pastinha de salmão com cream cheese e alho poró braseado com molho tarê', preco: 'a partir de R$ 15,00' },
       { nome: 'Niguiri Atum Fusion', desc: '2 unidades — selado com gergelim, gengibre e geleia de pimenta', preco: 'R$ 26,00' },
       { nome: 'Niguiri Especial', desc: '2 unidades — camarão em fina fatia de salmão braseado, cream cheese e molho tarê', preco: 'R$ 26,00' },
@@ -105,7 +104,7 @@ const cardapio = [
       { nome: 'Salmão Crispy', desc: 'Sashimi de salmão na crosta de gergelim coberto com geleia de pimenta artesanal e crispy de couve — 5 unid', preco: 'R$ 51,00' },
       { nome: 'Sashimi Kani', desc: '5 unidades', preco: 'R$ 15,00' },
       { nome: 'Sashimi na Crosta de Gergelim', desc: 'Irresistível sashimi na crosta de gergelim com molho tarê cítrico', preco: 'a partir de R$ 47,00' },
-      { nome: 'Sashimis', desc: 'Deliciosas fatias de peixe fresco', preco: 'consulte' },
+      { nome: 'Sashimis', desc: 'Deliciosas fatias de peixe fresco', preco: 'consulte o garçom' },
       { nome: 'Tatakis', desc: 'Sashimi braseado com molho tarê artesanal, cheiro verde e gergelim — atum ou salmão', preco: 'a partir de R$ 47,40' },
     ],
   },
@@ -114,15 +113,15 @@ const cardapio = [
     emoji: '🎌',
     cor: 'var(--gold)',
     itens: [
-      { nome: 'Comb Mini Salmão 17 PÇS', desc: '5 Sashimis, 4 Uramaki Filadélfia, 4 Hossomaki salmão, 2 Niguiris, 2 Joe braseado', preco: 'R$ 99,00' },
+      { nome: 'Take 10 PÇS', desc: '4 Uramaki Filadélfia, 4 Hossomaki salmão e 2 niguiris de salmão', preco: 'R$ 47,00' },
+      { nome: 'Matsu 14 PÇS', desc: '4 Uramaki Filadélfia, 4 Hossomaki salmão, 4 niguiris de salmão e 2 Joe braseado', preco: 'R$ 67,00' },
       { nome: 'Comb Minizinho Joe 9 PÇS', desc: '3 Sashimis, 4 Uramaki Filadélfia e 2 Niguiris ou 2 Joe braseado', preco: 'R$ 59,00' },
       { nome: 'Comb Minizinho Niguiri 9 PÇS', desc: '3 Sashimis, 4 Uramaki Filadélfia e 2 Niguiris', preco: 'R$ 59,00' },
+      { nome: 'Comb Mini Salmão 17 PÇS', desc: '5 Sashimis, 4 Uramaki Filadélfia, 4 Hossomaki salmão, 2 Niguiris e 2 Joe braseado', preco: 'R$ 99,00' },
       { nome: 'Comb Salmão 26 PÇS', desc: '10 Sashimis, Uramakis: 4 Filadélfia e 4 Filadélfia Especial, 4 Hossomaki, 2 Niguiris e 2 Joe braseado', preco: 'R$ 149,00' },
-      { nome: 'Comb Salmão 3 35 PÇS', desc: '15 Sashimis, Uramakis: 4 Filadélfia e 4 Filadélfia Especial, 4 Hossomaki, 4 Niguiris e 4 Joe braseado', preco: 'R$ 199,00' },
+      { nome: 'Comb Salmão 35 PÇS', desc: '15 Sashimis, Uramakis: 4 Filadélfia e 4 Filadélfia Especial, 4 Hossomaki, 4 Niguiris e 4 Joe braseado', preco: 'R$ 199,00' },
       { nome: 'Comb Salmão XXL 52 PÇS', desc: '20 Sashimis, Uramakis: 8 Filadélfia, 4 Filadélfia Especial, 4 Niramaki, 4 Niguiris, 4 Joe braseado', preco: 'R$ 279,00' },
-      { nome: 'Combo do Chef 24 PÇS', desc: '22 peças + 150g de cubinhos de salmão picante — 10 sashimis, 5 salmão e 5 salmão na crosta de gergelim', preco: 'R$ 224,00' },
-      { nome: 'Matsu 14 PÇS', desc: '4 Uramaki Filadélfia, 4 Hossomaki salmão, 4 niguiris de salmão e 2 Joe braseado', preco: 'R$ 67,00' },
-      { nome: 'Take 10 PÇS', desc: '4 Uramaki Filadélfia, 4 Hossomaki salmão e 2 niguiris de salmão', preco: 'R$ 47,00' },
+      { nome: 'Combo do Chef 24 PÇS', desc: '22 peças + 150g de cubinhos de salmão picante. 10 sashimis: 5 salmão e 5 salmão na crosta de gergelim', preco: 'R$ 224,00' },
     ],
   },
   {
@@ -130,12 +129,12 @@ const cardapio = [
     emoji: '🍣',
     cor: 'var(--gold-dk)',
     itens: [
-      { nome: 'Comb 1 — 26 PÇS', desc: '10 Sashimis: salmão, atum, tilápia e polvo, Uramakis: 2 Filadélfia e 2 Filadélfia Especial, 2 Ebi Especial e 2 Imaginum, 2 Niguiris e 2 Joe braseado', preco: 'R$ 149,00' },
-      { nome: 'Comb 2 HOT — 26 PÇS', desc: '10 Sashimis: salmão, atum, tilápia e polvo, Uramakis: 2 Filadélfia e 2 Filadélfia Especial, 2 Ebi Especial e 2 Imaginum, 2 Niguiris e 2 Joe braseado + Hot', preco: 'R$ 159,00' },
-      { nome: 'Comb 3 Misto — 35 PÇS', desc: '15 Sashimis: salmão, atum, tilápia e polvo, Uramakis: 2 Filadélfia e 2 Filadélfia Especial, 2 Ebi Especial e 2 Imaginum, 4 Hossomaki salmão, 4 Niguiris e 4 Joe braseado', preco: 'R$ 199,00' },
-      { nome: 'Comb 4 — 52 PÇS', desc: '20 Sashimis: salmão, atum, tilápia e polvo, Uramakis: 4 Filadélfia, 4 Filadélfia Especial, 4 Ebi e 4 Imaginum, 4 Niguiris e 4 Joe braseado', preco: 'R$ 289,00' },
-      { nome: 'Comb Osaka — 32 PÇS', desc: 'A melhor seleção de 32 peças: 12 Sashimis (4 crispy, 4 salmão, 4 tataki), Uramakis: 2 Filadélfia, 2 Filadélfia Especial, 2 Ebi Especial e 2 Imaginum, 2 Niguiris barriga trufado, 2 Joe, 2 Joe braseado, 6 Hot ebi hot', preco: 'R$ 249,00' },
-      { nome: 'Makimono — 20 PÇS', desc: '2 Filadélfia, 2 Filadélfia Especial, 2 Ebi Especial, 2 Imaginum, ½ Hossomaki de salmão e ½ Hossomaki de manga', preco: 'R$ 89,00' },
+      { nome: 'Makimono 20 PÇS', desc: '2 Filadélfia, 2 Filadélfia Especial, 2 Ebi Especial, 2 Imaginum, ½ Hossomaki de salmão e ½ Hossomaki de manga', preco: 'R$ 89,00' },
+      { nome: 'Comb 1 — 26 PÇS', desc: '10 Sashimis: salmão, atum, tilápia e polvo. Uramakis: 2 Filadélfia, 2 Filadélfia Especial, 2 Ebi e 2 Imaginum. 2 Niguiris e 2 Joe braseado', preco: 'R$ 149,00' },
+      { nome: 'Comb 2 HOT — 26 PÇS', desc: '10 Sashimis + hots. Uramakis: 2 Filadélfia, 2 Filadélfia Especial, 2 Ebi e 2 Imaginum. 2 Niguiris e 2 Joe braseado', preco: 'R$ 159,00' },
+      { nome: 'Comb 3 Misto — 35 PÇS', desc: '15 Sashimis: salmão, atum, tilápia e polvo. Uramakis: 2 Filadélfia, 2 Filadélfia Especial, 2 Ebi e 2 Imaginum. 4 Hossomaki, 4 Niguiris e 4 Joe braseado', preco: 'R$ 199,00' },
+      { nome: 'Comb 4 — 52 PÇS', desc: '20 Sashimis: salmão, atum, tilápia e polvo. Uramakis: 4 Filadélfia, 4 Filadélfia Especial, 4 Ebi e 4 Imaginum. 4 Niguiris e 4 Joe braseado', preco: 'R$ 289,00' },
+      { nome: 'Comb Osaka — 32 PÇS', desc: '12 Sashimis (4 crispy, 4 salmão, 4 tataki). Uramakis: 2 Filadélfia, 2 Filadélfia Especial, 2 Ebi Especial e 2 Imaginum. 2 Niguiris barriga trufado, 2 Joe, 2 Joe braseado, 6 Hot ebi hot', preco: 'R$ 249,00' },
       { nome: 'Sushi Vegetariano — 16 PÇS', desc: '8 uramakis com legumes: ½ Hossomaki de pepino e ½ Hossomaki de manga', preco: 'R$ 69,00' },
     ],
   },
@@ -181,7 +180,31 @@ const cardapio = [
     itens: [
       { nome: 'Escolha os seus Extras', desc: 'Molhos, arroz e acompanhamentos adicionais', preco: 'consulte' },
       { nome: 'Porção de Proteína', desc: 'Proteína grelhada ou empanada de sua escolha', preco: 'a partir de R$ 27,90' },
-      { nome: 'Prato Kids', desc: '1 proteína e 1 acompanhamento', preco: 'a partir de R$ 39,00' },
+      { nome: 'Prato Kids', desc: '1 proteína e 1 acompanhamento a sua escolha', preco: 'a partir de R$ 39,00' },
+    ],
+  },
+  {
+    secao: 'Vinhos e Sake',
+    emoji: '🍷',
+    cor: 'var(--gold)',
+    itens: [
+      { nome: 'Vinho Branco', desc: 'Seleção de vinhos brancos', preco: 'consulte' },
+      { nome: 'Vinho Rosé', desc: 'Seleção de vinhos rosé', preco: 'consulte' },
+      { nome: 'Vinho Espumante', desc: 'Seleção de espumantes', preco: 'consulte' },
+      { nome: 'Vinho Tinto', desc: 'Seleção de vinhos tintos', preco: 'consulte' },
+      { nome: 'Sake', desc: 'Sake tradicional japonês', preco: 'consulte' },
+    ],
+  },
+  {
+    secao: 'Bebidas',
+    emoji: '🥤',
+    cor: 'var(--blue)',
+    itens: [
+      { nome: 'Águas', desc: 'Água mineral com ou sem gás', preco: 'a partir de R$ 9,00' },
+      { nome: 'Long Neck', desc: 'Cervejas importadas e nacionais', preco: 'a partir de R$ 12,90' },
+      { nome: 'Refrigerante', desc: 'Lata — diversas opções', preco: 'consulte' },
+      { nome: 'Soda Italiana', desc: 'A sua soda preferida também no delivery', preco: 'R$ 19,00' },
+      { nome: 'Suco Natural', desc: '420ml — sabores variados', preco: 'a partir de R$ 13,00' },
     ],
   },
 ]
