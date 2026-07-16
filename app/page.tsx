@@ -38,7 +38,7 @@ export default function Home() {
             <div className="hero-bar">
               <div className="hero-bar-item"><strong>Rua Tabajaras, 714</strong>Vila Izabel — Curitiba/PR</div>
               <div className="hero-bar-item"><strong>(41) 3082-3093</strong>Reservas e WhatsApp</div>
-              <div className="hero-bar-item"><strong>Seg–Sáb</strong>Almoço e Jantar</div>
+              <div className="hero-bar-item"><strong>Seg–Sáb</strong>11h30–23h30</div>
               <div className="hero-bar-item"><strong>App próprio</strong>App Store · Google Play</div>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
                 <div className="local-row">
                   <div className="local-icon blue">🕐</div>
-                  <div><h3 className="blue">Horários</h3><p><strong>Almoço:</strong> Seg–Sex 11h30–14h30 · Sáb e feriados 11h30–15h<br/><strong>Jantar:</strong> Seg–Sáb 18h–23h30</p></div>
+                  <div><h3 className="blue">Horários</h3><p>Seg–Sáb: 11h30–23h30<br/>Domingo: Fechado</p></div>
                 </div>
                 <div className="local-row">
                   <div className="local-icon green">📞</div>
