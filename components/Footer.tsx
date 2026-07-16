@@ -16,7 +16,7 @@ export default function Footer() {
             <h4>Navegação</h4>
             <Link href="/cardapio">Cardápio</Link>
             <Link href="/sobre">Sobre nós</Link>
-            <Link href="/delivery">Delivery</Link>
+            <a href="https://imaginumsushi.menudino.com/" target="_blank" rel="noopener noreferrer">Peça Aqui 🛒</a>
             <Link href="/reservas">Reservas</Link>
           </div>
           <div className="footer-col">
