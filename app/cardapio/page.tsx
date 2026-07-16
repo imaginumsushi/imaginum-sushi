@@ -257,6 +257,44 @@ export default function Cardapio() {
 
         <div className="wave-bar" />
 
+        {/* MENU DEGUSTAÇÃO DESTAQUE */}
+        <section className="section" style={{background:'var(--surface)',paddingTop:'3rem',paddingBottom:'3rem'}}>
+          <div className="container">
+            <div style={{maxWidth:700,margin:'0 auto',textAlign:'center'}}>
+              <span style={{fontSize:'2rem'}}>🎴</span>
+              <h2 style={{margin:'0.75rem 0',color:'var(--white)'}}>Menu <em className="gold">Degustação</em></h2>
+              <p style={{marginBottom:'2rem',color:'rgba(255,255,255,0.6)'}}>
+                Há quem chame de Rodízio, Festival ou Sequência.<br/>
+                Aqui no Imaginum chamamos de <strong style={{color:'var(--white)'}}>Menu Degustação</strong>.<br/>
+                Individual e para consumo no local.
+              </p>
+              <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:'1px',background:'rgba(220,160,60,0.2)',borderRadius:'12px',overflow:'hidden',marginBottom:'1.5rem'}}>
+                <div style={{background:'var(--dark)',padding:'1.5rem',textAlign:'center'}}>
+                  <p style={{fontSize:'0.72rem',textTransform:'uppercase',letterSpacing:'0.12em',color:'var(--green)',marginBottom:'0.5rem',fontWeight:600}}>Almoço</p>
+                  <p style={{fontSize:'0.84rem',color:'rgba(255,255,255,0.6)',marginBottom:'0.75rem'}}>Seg–Sex<br/><span style={{fontSize:'0.75rem'}}>exceto feriados</span></p>
+                  <p style={{fontFamily:'var(--font-display)',fontSize:'1.6rem',color:'var(--gold)',fontWeight:700}}>R$ 189,90</p>
+                  <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)'}}>por pessoa</p>
+                </div>
+                <div style={{background:'var(--dark)',padding:'1.5rem',textAlign:'center'}}>
+                  <p style={{fontSize:'0.72rem',textTransform:'uppercase',letterSpacing:'0.12em',color:'var(--blue)',marginBottom:'0.5rem',fontWeight:600}}>Jantar</p>
+                  <p style={{fontSize:'0.84rem',color:'rgba(255,255,255,0.6)',marginBottom:'0.75rem'}}>Seg–Qui<br/><span style={{fontSize:'0.75rem'}}>exceto feriados</span></p>
+                  <p style={{fontFamily:'var(--font-display)',fontSize:'1.6rem',color:'var(--gold)',fontWeight:700}}>R$ 199,90</p>
+                  <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)'}}>por pessoa</p>
+                </div>
+                <div style={{background:'var(--dark)',padding:'1.5rem',textAlign:'center'}}>
+                  <p style={{fontSize:'0.72rem',textTransform:'uppercase',letterSpacing:'0.12em',color:'var(--gold-dk)',marginBottom:'0.5rem',fontWeight:600}}>Sex, Sáb e Feriados</p>
+                  <p style={{fontSize:'0.84rem',color:'rgba(255,255,255,0.6)',marginBottom:'0.75rem'}}>Almoço e Jantar</p>
+                  <p style={{fontFamily:'var(--font-display)',fontSize:'1.6rem',color:'var(--gold)',fontWeight:700}}>R$ 219,90</p>
+                  <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)'}}>por pessoa</p>
+                </div>
+              </div>
+              <a href="tel:+554130823093" className="btn btn-gold">Reservar para o Degustação</a>
+            </div>
+          </div>
+        </section>
+
+        <div className="wave-bar" />
+
         <section className="section" style={{textAlign:'center',paddingTop:'2.5rem',paddingBottom:'3rem'}}>
           <div className="container">
             <h2 style={{marginBottom:'0.75rem'}}>Pronto para pedir?</h2>
