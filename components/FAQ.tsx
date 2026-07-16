@@ -7,7 +7,7 @@ const faqs = [
   { q: 'O Imaginum Sushi faz delivery em Curitiba?', a: 'Sim! Temos app próprio disponível na App Store e Google Play. Também estamos presentes no iFood. Entregamos em Curitiba e região.' },
   { q: 'O Imaginum Sushi aceita reservas?', a: 'Sim, aceitamos reservas pelo telefone (41) 3082-3093 e pelo WhatsApp. Recomendamos reservar com antecedência nos fins de semana.' },
   { q: 'Quais formas de pagamento são aceitas?', a: 'Aceitamos dinheiro, Pix, cartão de crédito e débito de todas as bandeiras. No delivery, aceitamos pagamento online ou na entrega.' },
-  { q: 'O Imaginum Sushi tem app próprio?', a: 'Sim! Nosso aplicativo está disponível na App Store (iOS) e Google Play (Android) para pedidos de delivery com promoções exclusivas.' },
+  { q: 'O Imaginum Sushi tem delivery?', a: 'Sim! Faça seu pedido pelo nosso site interativo em imaginumsushi.menudino.com ou pelo iFood. Entregamos em Curitiba e região.' },
   { q: 'Tem opções vegetarianas no cardápio?', a: 'Sim! Temos temakis e uramakis vegetarianos com pepino, abacate e cream cheese. Consulte nosso cardápio completo para ver todas as opções.' },
   { q: 'Que tipo de culinária o Imaginum Sushi serve?', a: 'Japanese Fusion Food: combinados frescos, temakis artesanais, hot rolls crocantes, sashimis e entradas japonesas como edamame, missoshiru e guioza.' },
 ]
