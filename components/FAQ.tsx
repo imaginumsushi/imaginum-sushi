@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 const faqs = [
   { q: 'O Imaginum Sushi fica em qual endereço em Curitiba?', a: 'O Imaginum Sushi fica na Rua Tabajaras, 714, Vila Izabel, Curitiba/PR. Referência: próximo ao bairro Água Verde.' },
-  { q: 'Qual o horário de funcionamento do Imaginum Sushi?', a: 'Almoço: segunda a sexta das 11h30 às 14h30; sábados e feriados das 11h30 às 15h. Jantar: segunda a sábado das 18h às 23h30.' },
+  { q: 'Qual o horário de funcionamento do Imaginum Sushi?', a: 'Seg–Sáb: 11h30–23h30. Domingo: Fechado.' },
   { q: 'O Imaginum Sushi faz delivery em Curitiba?', a: 'Sim! Temos app próprio disponível na App Store e Google Play. Também estamos presentes no iFood. Entregamos em Curitiba e região.' },
   { q: 'O Imaginum Sushi aceita reservas?', a: 'Sim, aceitamos reservas pelo telefone (41) 3082-3093 e pelo WhatsApp. Recomendamos reservar com antecedência nos fins de semana.' },
   { q: 'Quais formas de pagamento são aceitas?', a: 'Aceitamos dinheiro, Pix, cartão de crédito e débito de todas as bandeiras. No delivery, aceitamos pagamento online ou na entrega.' },
