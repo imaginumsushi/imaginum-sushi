@@ -8,21 +8,21 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <Image src="/logo.png" alt="Imaginum Sushi" width={120} height={36} style={{objectFit:'contain'}} />
+              <Image src="/logo.png" alt="Imaginum Sushi" width={120} height={36} style={{objectFit:'contain',opacity:0.6}} />
             </div>
-            <p>Japanese Fusion Food em Curitiba. Ingredientes frescos selecionados diariamente na Vila Izabel.</p>
+            <p>Japanese Fusion Food em Curitiba.<br/>Ingredientes frescos, experiências inesquecíveis.</p>
           </div>
           <div className="footer-col">
             <h4>Navegação</h4>
             <Link href="/cardapio">Cardápio</Link>
             <Link href="/sobre">Sobre nós</Link>
-            <a href="https://imaginumsushi.menudino.com/" target="_blank" rel="noopener noreferrer">Peça Aqui 🛒</a>
+            <Link href="/delivery">Delivery</Link>
             <Link href="/reservas">Reservas</Link>
           </div>
           <div className="footer-col">
             <h4>Contato</h4>
-            <p>Rua Tabajaras, 714</p>
-            <p>Vila Izabel — Curitiba/PR</p>
+            <p>Rua Tabajaras, 714 — Vila Izabel</p>
+            <p>Curitiba/PR</p>
             <a href="tel:+554130823093">(41) 3082-3093</a>
             <a href="https://wa.me/554130823093" target="_blank" rel="noopener noreferrer">WhatsApp 📲</a>
             <p style={{marginTop:'0.75rem'}}>Seg–Sáb: 11h30–23h30</p>
