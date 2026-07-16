@@ -24,8 +24,8 @@ export default function Footer() {
             <p>Rua Tabajaras, 714</p>
             <p>Vila Izabel — Curitiba/PR</p>
             <a href="tel:+554130823093">(41) 3082-3093</a>
-            <p style={{marginTop:'0.75rem'}}>Seg–Sex: 11h30–14h30 e 18h–23h30</p>
-            <p>Sáb: 11h30–15h e 18h–23h30</p>
+            <p style={{marginTop:'0.75rem'}}>Seg–Sáb: 11h30–23h30</p>
+            <p>Domingo: Fechado</p>
           </div>
         </div>
         <div className="footer-bottom">
