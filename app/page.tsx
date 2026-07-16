@@ -21,6 +21,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero section">
         <div className="container">
+          <div className="hero-photo" />
           <div className="hero-gradient" />
           <div className="hero-waves" />
           <div className="hero-content">
