@@ -33,7 +33,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <a href="https://imaginumsushi.menudino.com/" target="_blank" rel="noopener noreferrer" className="btn btn-gold">Peça Aqui 🛒</a>
-              <Link href="/cardapio" className="btn btn-outline">Ver cardápio</Link>
+              <a href="https://wa.me/554130823093" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Reservar via WhatsApp 📲</a>
             </div>
             <div className="hero-bar">
               <div className="hero-bar-item"><strong>Rua Tabajaras, 714</strong>Vila Izabel — Curitiba/PR</div>
