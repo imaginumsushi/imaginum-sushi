@@ -20,7 +20,13 @@ export default function Home() {
 
       {/* HERO FULLSCREEN */}
       <section className="hero">
-        <div className="hero-bg" />
+        <Image
+          src="/hero.jpg"
+          alt="Imaginum Sushi — Fachada Vila Izabel Curitiba"
+          fill
+          priority
+          style={{objectFit:'cover',objectPosition:'center 30%',zIndex:0}}
+        />
         <div className="hero-overlay" />
         <div className="hero-content">
           <div className="hero-text">
