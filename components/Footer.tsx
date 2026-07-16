@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -6,8 +7,8 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <div className="nav-logo" style={{ fontSize: '1.1rem' }}>
-              IMAGINUM <span style={{ color: 'var(--gold)' }}>SUSHI</span>
+            <div className="footer-logo">
+              <Image src="/logo.png" alt="Imaginum Sushi" width={120} height={36} style={{objectFit:'contain'}} />
             </div>
             <p>Japanese Fusion Food em Curitiba. Ingredientes frescos selecionados diariamente na Vila Izabel.</p>
           </div>
@@ -23,13 +24,13 @@ export default function Footer() {
             <p>Rua Tabajaras, 714</p>
             <p>Vila Izabel — Curitiba/PR</p>
             <a href="tel:+554130823093">(41) 3082-3093</a>
-            <p style={{ marginTop: '0.75rem' }}>Seg–Sex: 11h30–14h30 e 18h–23h30</p>
+            <p style={{marginTop:'0.75rem'}}>Seg–Sex: 11h30–14h30 e 18h–23h30</p>
             <p>Sáb: 11h30–15h e 18h–23h30</p>
           </div>
         </div>
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} Imaginum Sushi. Todos os direitos reservados.</p>
-          <div className="social-links">
+          <div className="social-row">
             <a href="https://www.instagram.com/imaginumsushi" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://www.facebook.com/imaginumsushi" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://www.tripadvisor.com.br" target="_blank" rel="noopener noreferrer">TripAdvisor</a>
