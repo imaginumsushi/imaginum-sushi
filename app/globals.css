@@ -237,6 +237,19 @@ p { color: var(--gray); line-height: 1.7; }
 .social-row a { color: rgba(245,242,237,0.35); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
 .social-row a:hover { color: var(--gold); }
 
+
+/* ── NAV SOCIAL + DIVIDER ── */
+.nav-social {
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(245,242,237,0.55); transition: color 0.2s;
+  width: 28px; height: 28px;
+}
+.nav-social:hover { color: var(--gold); }
+.nav-divider {
+  display: block; width: 1px; height: 18px;
+  background: rgba(245,242,237,0.15);
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .nav { padding: 1.25rem 1.5rem; }
