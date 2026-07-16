@@ -58,7 +58,7 @@ const schemaRestaurant = {
   paymentAccepted: ['Dinheiro', 'Cartão de crédito', 'Cartão de débito', 'Pix'],
   amenityFeature: [
     { '@type': 'LocationFeatureSpecification', name: 'Delivery', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'App próprio', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Delivery online', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Reservas', value: true },
   ],
   sameAs: [
