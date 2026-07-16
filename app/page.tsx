@@ -19,16 +19,10 @@ export default function Home() {
       <Nav />
 
       {/* HERO FULLSCREEN */}
-      <section className="hero">
-        <Image
-          src="/hero.jpg"
-          alt="Imaginum Sushi — Fachada Vila Izabel Curitiba"
-          fill
-          priority
-          style={{objectFit:'cover',objectPosition:'center 30%',zIndex:0}}
-        />
-        <div className="hero-overlay" />
-        <div className="hero-content">
+      <section className="hero" style={{position:"relative",height:"100vh",minHeight:600,display:"flex",alignItems:"flex-end",overflow:"hidden",background:"#080808"}}>
+        <div style={{position:"absolute",inset:0,backgroundImage:"url('/hero.jpg')",backgroundSize:"cover",backgroundPosition:"center 30%",zIndex:0}} />
+        <div style={{position:"absolute",inset:0,background:"linear-gradient(to bottom, rgba(8,8,8,0.3) 0%, rgba(8,8,8,0.15) 40%, rgba(8,8,8,0.8) 80%, rgba(8,8,8,0.97) 100%)",zIndex:1}} />
+        <div className="hero-content" style={{position:"relative",zIndex:2,width:"100%",padding:"0 3rem 5rem",display:"flex",alignItems:"flex-end",justifyContent:"space-between"}}>
           <div className="hero-text">
             <p className="hero-eyebrow">Japanese Fusion Food · Vila Izabel, Curitiba</p>
             <h1 className="hero-title">
