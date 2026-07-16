@@ -215,7 +215,7 @@ export default function Cardapio() {
       <Nav />
       <main style={{paddingTop:'5rem',minHeight:'100vh'}}>
 
-        <section className="section" style={{paddingBottom:'2rem'}}>
+        <section className="section" style={{paddingBottom:'2rem',background:'var(--dark)'}}>
           <div className="container">
             <p className="tag-pill">Japanese Fusion Food · Curitiba</p>
             <h1>Cardápio <em className="gold">Imaginum Sushi</em></h1>
@@ -233,18 +233,18 @@ export default function Cardapio() {
         <div className="wave-bar" />
 
         {cardapio.map((s, i) => (
-          <section key={i} className={'section' + (i % 2 === 1 ? ' section-dark' : '')} style={{paddingTop:'2.5rem',paddingBottom:'2.5rem'}}>
+          <section key={i} className="section" style={{paddingTop:'2.5rem',paddingBottom:'2.5rem',background: i % 2 === 1 ? 'var(--surface)' : 'var(--dark)'}}>
             <div className="container">
               <div style={{display:'flex',alignItems:'center',gap:'0.75rem',marginBottom:'1.75rem'}}>
                 <span style={{fontSize:'1.6rem'}}>{s.emoji}</span>
-                <h2 style={{fontSize:'1.5rem',color:i%2===1?'var(--white)':'var(--black)',borderLeft:`3px solid ${s.cor}`,paddingLeft:'0.75rem'}}>{s.secao}</h2>
+                <h2 style={{fontSize:'1.5rem',color:'var(--white)',borderLeft:`3px solid ${s.cor}`,paddingLeft:'0.75rem'}}>{s.secao}</h2>
               </div>
-              <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))',gap:'1px',background:'rgba(128,128,128,0.1)',borderRadius:'10px',overflow:'hidden'}}>
+              <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(300px,1fr))',gap:'1px',background:'rgba(255,255,255,0.06)',borderRadius:'10px',overflow:'hidden'}}>
                 {s.itens.map((item, j) => (
-                  <div key={j} style={{background:i%2===1?'rgba(255,255,255,0.03)':'rgba(0,0,0,0.02)',padding:'1.1rem 1.25rem',display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:'1rem'}}>
+                  <div key={j} style={{background: i%2===1 ? 'rgba(255,255,255,0.04)' : 'rgba(255,255,255,0.02)',padding:'1.1rem 1.25rem',display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:'1rem'}}>
                     <div style={{flex:1}}>
-                      <h3 style={{color:i%2===1?'var(--white)':'var(--black)',fontSize:'0.95rem',marginBottom:'0.25rem'}}>{item.nome}</h3>
-                      {item.desc && item.desc !== 'consulte' && <p style={{fontSize:'0.81rem',color:i%2===1?'rgba(255,255,255,0.48)':'var(--gray-500)',lineHeight:'1.5'}}>{item.desc}</p>}
+                      <h3 style={{color:'var(--white)',fontSize:'0.95rem',marginBottom:'0.25rem',fontWeight:500}}>{item.nome}</h3>
+                      {item.desc && item.desc !== 'consulte' && <p style={{fontSize:'0.81rem',color:'rgba(255,255,255,0.55)',lineHeight:'1.5'}}>{item.desc}</p>}
                     </div>
                     <span style={{fontFamily:'var(--font-display)',fontSize:'1rem',color:'var(--gold)',fontWeight:700,flexShrink:0,whiteSpace:'nowrap'}}>{item.preco}</span>
                   </div>
