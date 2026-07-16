@@ -11,7 +11,7 @@ export default function Nav() {
         <Link href="/cardapio">Cardápio</Link>
         <Link href="/sobre">Sobre</Link>
         <Link href="/delivery">Delivery</Link>
-        <Link href="/reservas" className="nav-cta">Reservar mesa</Link>
+        <a href="https://imaginumsushi.menudino.com/" target="_blank" rel="noopener noreferrer" className="nav-cta">Peça Aqui 🛒</a>
       </div>
     </nav>
   )
