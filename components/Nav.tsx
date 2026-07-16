@@ -11,8 +11,40 @@ export default function Nav() {
         <Link href="/cardapio">Cardápio</Link>
         <Link href="/sobre">Sobre</Link>
         <Link href="/delivery">Delivery</Link>
-        <a href="https://wa.me/554130823093" target="_blank" rel="noopener noreferrer" style={{fontSize:"0.84rem",fontWeight:500,color:"rgba(255,255,255,0.7)",letterSpacing:"0.04em",transition:"color 0.2s"}} onMouseOver={e=>(e.currentTarget.style.color="var(--green)")} onMouseOut={e=>(e.currentTarget.style.color="rgba(255,255,255,0.7)")}>Reservar 📲</a>
-        <a href="https://imaginumsushi.menudino.com/" target="_blank" rel="noopener noreferrer" className="nav-cta">Peça Aqui 🛒</a>
+        <a
+          href="https://wa.me/554130823093"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            background:'#25d366',
+            color:'#fff',
+            padding:'8px 18px',
+            borderRadius:'4px',
+            fontWeight:600,
+            fontSize:'0.84rem',
+            letterSpacing:'0.04em',
+            transition:'opacity 0.2s',
+          }}
+        >
+          Reservar 📲
+        </a>
+        <a
+          href="https://imaginumsushi.menudino.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            background:'var(--gold-dk)',
+            color:'#fff',
+            padding:'8px 18px',
+            borderRadius:'4px',
+            fontWeight:600,
+            fontSize:'0.84rem',
+            letterSpacing:'0.04em',
+            transition:'opacity 0.2s',
+          }}
+        >
+          Peça Aqui 🛒
+        </a>
       </div>
     </nav>
   )
