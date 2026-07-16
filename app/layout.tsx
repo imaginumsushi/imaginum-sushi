@@ -77,7 +77,7 @@ const schemaFaq = {
     { '@type': 'Question', name: 'O Imaginum Sushi faz delivery em Curitiba?', acceptedAnswer: { '@type': 'Answer', text: 'Sim! Faça seu pedido em imaginumsushi.menudino.com ou pelo iFood. Entregamos em Curitiba e região.' } },
     { '@type': 'Question', name: 'O Imaginum Sushi aceita reservas?', acceptedAnswer: { '@type': 'Answer', text: 'Sim, aceitamos reservas pelo (41) 3082-3093 e pelo WhatsApp. Recomendamos reservar com antecedência nos fins de semana.' } },
     { '@type': 'Question', name: 'Quais formas de pagamento o Imaginum Sushi aceita?', acceptedAnswer: { '@type': 'Answer', text: 'Aceitamos dinheiro, Pix, cartão de crédito e débito de todas as bandeiras.' } },
-    { '@type': 'Question', name: 'Tem opções vegetarianas no Imaginum Sushi?', acceptedAnswer: { '@type': 'Answer', text: 'Sim! Temos temakis e uramakis vegetarianos com pepino, abacate e cream cheese.' } },
+    { '@type': 'Question', name: 'Tem opções vegetarianas no Imaginum Sushi?', acceptedAnswer: { '@type': 'Answer', text: 'Sim! Temos temakis e uramakis vegetarianos com pepino, abacate, legumes e muito mais. Consulte nosso cardápio completo para ver todas as opções.' } },
     { '@type': 'Question', name: 'Que tipo de culinária o Imaginum Sushi serve?', acceptedAnswer: { '@type': 'Answer', text: 'Japanese Fusion Food: combinados de sushi, temakis artesanais, hot rolls crocantes, sashimis frescos e entradas japonesas como edamame, missoshiru e guioza.' } },
   ],
 }
