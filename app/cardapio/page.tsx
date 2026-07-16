@@ -224,8 +224,7 @@ export default function Cardapio() {
               para retirada ou delivery pelo app e iFood.
             </p>
             <div style={{display:'flex',gap:'0.75rem',marginTop:'1.5rem',flexWrap:'wrap'}}>
-              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="btn btn-gold" style={{fontSize:'0.84rem',padding:'10px 20px'}}>App Store</a>
-              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" className="btn btn-blue" style={{fontSize:'0.84rem',padding:'10px 20px'}}>Google Play</a>
+              <a href="https://imaginumsushi.menudino.com/" target="_blank" rel="noopener noreferrer" className="btn btn-gold" style={{fontSize:'0.84rem',padding:'10px 20px'}}>Peça Aqui 🛒</a>
               <a href="tel:+554130823093" className="btn btn-outline" style={{fontSize:'0.84rem',padding:'10px 20px'}}>(41) 3082-3093</a>
             </div>
           </div>
@@ -300,8 +299,7 @@ export default function Cardapio() {
             <h2 style={{marginBottom:'0.75rem'}}>Pronto para pedir?</h2>
             <p style={{marginBottom:'2rem'}}>Delivery pelo app, iFood ou ligue para reservar sua mesa.</p>
             <div style={{display:'flex',gap:'1rem',justifyContent:'center',flexWrap:'wrap'}}>
-              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="btn btn-gold">App Store</a>
-              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" className="btn btn-blue">Google Play</a>
+              <a href="https://imaginumsushi.menudino.com/" target="_blank" rel="noopener noreferrer" className="btn btn-gold">Peça Aqui 🛒</a>
               <a href="tel:+554130823093" className="btn btn-outline">(41) 3082-3093</a>
             </div>
           </div>
