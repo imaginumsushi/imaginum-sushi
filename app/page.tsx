@@ -105,13 +105,16 @@ export default function Home() {
                 <div className="stat"><div className="stat-num">Vila<br/>Izabel</div><div className="stat-label">Curitiba/PR</div></div>
               </div>
             </div>
-            <div className="sobre-img">
-              <Image
-                src="/hero.jpg"
-                alt="Ambiente interno do Imaginum Sushi em Curitiba, Vila Izabel"
-                fill
-                style={{objectFit:'cover',objectPosition:'center'}}
-              />
+            <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'8px'}}>
+              <div style={{position:'relative',aspectRatio:'1',borderRadius:4,overflow:'hidden',gridRow:'span 2'}}>
+                <Image src="/fotos/combinado-misto.jpg" alt="Combinado misto Imaginum Sushi Curitiba" fill style={{objectFit:'cover'}} />
+              </div>
+              <div style={{position:'relative',aspectRatio:'1',borderRadius:4,overflow:'hidden'}}>
+                <Image src="/fotos/sashimi.jpg" alt="Sashimis Imaginum Sushi Curitiba" fill style={{objectFit:'cover'}} />
+              </div>
+              <div style={{position:'relative',aspectRatio:'1',borderRadius:4,overflow:'hidden'}}>
+                <Image src="/fotos/carpaccio.jpg" alt="Carpaccio Imaginum Sushi Curitiba" fill style={{objectFit:'cover'}} />
+              </div>
             </div>
           </div>
         </div>
