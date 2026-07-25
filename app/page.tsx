@@ -224,7 +224,7 @@ export default function Home() {
             <div>
               <div className="map-box">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8!2d-49.2872!3d-25.4241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce4f5b6b6b6b7%3A0x1!2sRua+Tabajaras%2C+714+-+Vila+Izabel%2C+Curitiba+-+PR!5e0!3m2!1spt-BR!2sbr!4v1"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.3!2d-49.2980921!3d-25.4607873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce37669e40535%3A0x87c2a0f7d87ae793!2sImaginum+Sushi!5e0!3m2!1spt-BR!2sbr!4v1"
                   width="100%"
                   height="100%"
                   style={{border:0,borderRadius:2}}
