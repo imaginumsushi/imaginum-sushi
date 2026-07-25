@@ -10,7 +10,7 @@ const menuDestaques = [
   { cat: 'Sashimis', nome: 'Sashimis Especiais', desc: 'Fatias frescas de salmão, atum, polvo e muito mais', preco: 'a partir de R$ 37,00', foto: '/fotos/sashimi.jpg' },
   { cat: 'Carpaccios', nome: 'Carpaccio Especial', desc: 'Finas fatias de salmão com molho especial e ovas', preco: 'a partir de R$ 47,40', foto: '/fotos/carpaccio.jpg' },
   { cat: 'Entradas', nome: 'Entradas Especiais', desc: 'Cubinhos de salmão picante, edamame, ceviche e muito mais', preco: 'a partir de R$ 29,00', foto: '/fotos/entrada.jpg' },
-  { cat: 'Exclusivos', nome: 'Pratos Exclusivos', desc: 'Carpaji, Joe Brie, Kimuche do Cheff — criações únicas do chef', preco: 'a partir de R$ 49,00', foto: '/fotos/prato-especial.jpg' },
+  { cat: 'Exclusivos', nome: 'Joe Brie', desc: 'Massa fina e queijo Brie enrolando peixe, geleia de pimenta artesanal e rúcula — 5 unid', preco: 'R$ 62,00', foto: '/fotos/joe-brie.jpg' },
 ]
 
 export default function Home() {
