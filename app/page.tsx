@@ -1,17 +1,9 @@
 import Nav from '@/components/Nav'
+import MenuCarousel from '@/components/MenuCarousel'
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const menuDestaques = [
-  { cat: 'Combinados', nome: 'Combinado Misto', desc: 'Sashimis, uramakis, niguiris e muito mais — a experiência completa', preco: 'a partir de R$ 149,00', foto: '/fotos/combinado-misto.jpg' },
-  { cat: 'Combinados de Salmão', nome: 'Combinado Salmão', desc: 'Sashimis, uramakis filadélfia, hossomakis e Joe braseado', preco: 'a partir de R$ 99,00', foto: '/fotos/combinado-salmao.jpg' },
-  { cat: 'Sashimis', nome: 'Sashimis Especiais', desc: 'Fatias frescas de salmão, atum, polvo e muito mais', preco: 'a partir de R$ 37,00', foto: '/fotos/sashimi.jpg' },
-  { cat: 'Carpaccios', nome: 'Carpaccio Usuzukuri', desc: 'Finas fatias de peixe branco, ovas, limão, cebola roxa e especiarias', preco: 'a partir de R$ 45,50', foto: '/fotos/carpaccio-usuzukuri.jpg' },
-  { cat: 'Entradas', nome: 'Entradas Especiais', desc: 'Cubinhos de salmão picante, edamame, ceviche e muito mais', preco: 'a partir de R$ 29,00', foto: '/fotos/entrada.jpg' },
-  { cat: 'Exclusivos', nome: 'Joe Brie', desc: 'Massa fina e queijo Brie enrolando peixe, geleia de pimenta artesanal e rúcula — 5 unid', preco: 'R$ 62,00', foto: '/fotos/joe-brie.jpg' },
-]
 
 export default function Home() {
   return (
@@ -122,39 +114,7 @@ export default function Home() {
 
       <div className="wave-bar" />
 
-      {/* MENU PREVIEW */}
-      <section className="section" style={{paddingTop:'5rem',paddingBottom:'0'}}>
-        <div className="container" style={{marginBottom:'2.5rem'}}>
-          <p className="tag-pill">Nosso cardápio</p>
-          <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-end',flexWrap:'wrap',gap:'1rem'}}>
-            <h2 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',fontWeight:300,color:'var(--white)',lineHeight:1.15}}>
-              Destaques do <em style={{fontStyle:'italic',color:'var(--gold)'}}>menu</em>
-            </h2>
-            <Link href="/cardapio" className="btn btn-outline">Cardápio completo</Link>
-          </div>
-        </div>
-        <div className="menu-grid">
-          {menuDestaques.map((item, i) => (
-            <div key={i} className="menu-item" style={{padding:0,overflow:'hidden'}}>
-              <div style={{position:'relative',height:200,overflow:'hidden'}}>
-                <Image
-                  src={item.foto}
-                  alt={`${item.nome} — Imaginum Sushi Curitiba`}
-                  fill
-                  style={{objectFit:'cover',transition:'transform 0.4s'}}
-                />
-                <div style={{position:'absolute',inset:0,background:'linear-gradient(to top, rgba(8,8,8,0.85) 0%, transparent 60%)'}} />
-                <p className="menu-item-cat" style={{position:'absolute',top:12,left:16}}>{item.cat}</p>
-              </div>
-              <div style={{padding:'1.25rem 1.5rem'}}>
-                <h3>{item.nome}</h3>
-                <p>{item.desc}</p>
-                <p className="menu-item-price">{item.preco}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <MenuCarousel />
 
       <div className="wave-bar" style={{marginTop:0}} />
 
