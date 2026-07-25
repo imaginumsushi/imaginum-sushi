@@ -21,8 +21,9 @@ export default function Home() {
       {/* HERO FULLSCREEN */}
       <section className="hero" style={{position:"relative",height:"100vh",minHeight:600,display:"flex",alignItems:"flex-end",overflow:"hidden",background:"#080808"}}>
         <div style={{position:"absolute",inset:0,backgroundImage:"url('/hero.jpg')",backgroundSize:"cover",backgroundPosition:"center 30%",zIndex:0}} />
-        <div style={{position:"absolute",inset:0,background:"linear-gradient(to bottom, rgba(8,8,8,0.3) 0%, rgba(8,8,8,0.15) 40%, rgba(8,8,8,0.8) 80%, rgba(8,8,8,0.97) 100%)",zIndex:1}} />
-        <div className="hero-content" style={{position:"relative",zIndex:2,width:"100%",padding:"0 3rem 5rem",display:"flex",alignItems:"flex-end",justifyContent:"space-between"}}>
+        <div style={{position:"absolute",inset:0,background:"rgba(8,8,8,0.52)",zIndex:1}} />
+        <div style={{position:"absolute",inset:0,background:"linear-gradient(to bottom, transparent 20%, rgba(8,8,8,0.7) 70%, rgba(8,8,8,0.97) 100%)",zIndex:2}} />
+        <div className="hero-content" style={{position:"relative",zIndex:3,width:"100%",padding:"0 3rem 5rem",display:"flex",alignItems:"flex-end",justifyContent:"space-between"}}>
           <div className="hero-text">
             <p className="hero-eyebrow">Japanese Fusion Food · Vila Izabel, Curitiba</p>
             <h1 className="hero-title">
