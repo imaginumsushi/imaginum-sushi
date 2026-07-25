@@ -8,7 +8,7 @@ const menuDestaques = [
   { cat: 'Combinados', nome: 'Combinado Misto', desc: 'Sashimis, uramakis, niguiris e muito mais — a experiência completa', preco: 'a partir de R$ 149,00', foto: '/fotos/combinado-misto.jpg' },
   { cat: 'Combinados de Salmão', nome: 'Combinado Salmão', desc: 'Sashimis, uramakis filadélfia, hossomakis e Joe braseado', preco: 'a partir de R$ 99,00', foto: '/fotos/combinado-salmao.jpg' },
   { cat: 'Sashimis', nome: 'Sashimis Especiais', desc: 'Fatias frescas de salmão, atum, polvo e muito mais', preco: 'a partir de R$ 37,00', foto: '/fotos/sashimi.jpg' },
-  { cat: 'Carpaccios', nome: 'Carpaccio Especial', desc: 'Finas fatias de salmão com molho especial e ovas', preco: 'a partir de R$ 47,40', foto: '/fotos/carpaccio.jpg' },
+  { cat: 'Carpaccios', nome: 'Carpaccio Usuzukuri', desc: 'Finas fatias de peixe branco, ovas, limão, cebola roxa e especiarias', preco: 'a partir de R$ 45,50', foto: '/fotos/carpaccio-usuzukuri.jpg' },
   { cat: 'Entradas', nome: 'Entradas Especiais', desc: 'Cubinhos de salmão picante, edamame, ceviche e muito mais', preco: 'a partir de R$ 29,00', foto: '/fotos/entrada.jpg' },
   { cat: 'Exclusivos', nome: 'Joe Brie', desc: 'Massa fina e queijo Brie enrolando peixe, geleia de pimenta artesanal e rúcula — 5 unid', preco: 'R$ 62,00', foto: '/fotos/joe-brie.jpg' },
 ]
