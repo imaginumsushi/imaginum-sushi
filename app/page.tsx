@@ -5,12 +5,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const menuDestaques = [
-  { cat: 'Exclusivos', nome: 'Carpaji', desc: 'Cogumelos Shimeji enroladinhos em fina fatia de salmão braseado com molho tarê', preco: 'R$ 49,00' },
-  { cat: 'Exclusivos', nome: 'Ceviche do Chef', desc: 'Peixe cru incrementado com limão, anéis de lula e especiarias da casa', preco: 'R$ 59,00' },
-  { cat: 'Hots', nome: 'Hot Special One', desc: 'Salmão e cream cheese, coberto com alho poró e molho tarê artesanal', preco: 'a partir de R$ 22,20' },
-  { cat: 'Sashimis', nome: 'Salmão Crispy', desc: 'Sashimi na crosta de gergelim com geleia de pimenta e crispy de couve', preco: 'R$ 51,00' },
-  { cat: 'Combinados', nome: 'Comb Osaka 32 PÇS', desc: '12 Sashimis, uramakis e hots — a seleção mais pedida da casa', preco: 'R$ 249,00' },
-  { cat: 'Sobremesas', nome: 'Petit Gateau', desc: 'Petit gateau com sorvete de creme', preco: 'R$ 49,00' },
+  { cat: 'Combinados', nome: 'Combinado Misto', desc: 'Sashimis, uramakis, niguiris e muito mais — a experiência completa', preco: 'a partir de R$ 149,00', foto: '/fotos/combinado-misto.jpg' },
+  { cat: 'Combinados de Salmão', nome: 'Combinado Salmão', desc: 'Sashimis, uramakis filadélfia, hossomakis e Joe braseado', preco: 'a partir de R$ 99,00', foto: '/fotos/combinado-salmao.jpg' },
+  { cat: 'Sashimis', nome: 'Sashimis Especiais', desc: 'Fatias frescas de salmão, atum, polvo e muito mais', preco: 'a partir de R$ 37,00', foto: '/fotos/sashimi.jpg' },
+  { cat: 'Carpaccios', nome: 'Carpaccio Especial', desc: 'Finas fatias de salmão com molho especial e ovas', preco: 'a partir de R$ 47,40', foto: '/fotos/carpaccio.jpg' },
+  { cat: 'Entradas', nome: 'Entradas Especiais', desc: 'Cubinhos de salmão picante, edamame, ceviche e muito mais', preco: 'a partir de R$ 29,00', foto: '/fotos/entrada.jpg' },
+  { cat: 'Exclusivos', nome: 'Pratos Exclusivos', desc: 'Carpaji, Joe Brie, Kimuche do Cheff — criações únicas do chef', preco: 'a partir de R$ 49,00', foto: '/fotos/prato-especial.jpg' },
 ]
 
 export default function Home() {
@@ -132,11 +132,22 @@ export default function Home() {
         </div>
         <div className="menu-grid">
           {menuDestaques.map((item, i) => (
-            <div key={i} className="menu-item">
-              <p className="menu-item-cat">{item.cat}</p>
-              <h3>{item.nome}</h3>
-              <p>{item.desc}</p>
-              <p className="menu-item-price">{item.preco}</p>
+            <div key={i} className="menu-item" style={{padding:0,overflow:'hidden'}}>
+              <div style={{position:'relative',height:200,overflow:'hidden'}}>
+                <Image
+                  src={item.foto}
+                  alt={`${item.nome} — Imaginum Sushi Curitiba`}
+                  fill
+                  style={{objectFit:'cover',transition:'transform 0.4s'}}
+                />
+                <div style={{position:'absolute',inset:0,background:'linear-gradient(to top, rgba(8,8,8,0.85) 0%, transparent 60%)'}} />
+                <p className="menu-item-cat" style={{position:'absolute',top:12,left:16}}>{item.cat}</p>
+              </div>
+              <div style={{padding:'1.25rem 1.5rem'}}>
+                <h3>{item.nome}</h3>
+                <p>{item.desc}</p>
+                <p className="menu-item-price">{item.preco}</p>
+              </div>
             </div>
           ))}
         </div>
