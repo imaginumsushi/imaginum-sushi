@@ -25,7 +25,7 @@ export default function Home() {
         <div style={{position:"absolute",inset:0,background:"linear-gradient(to bottom, transparent 20%, rgba(8,8,8,0.7) 70%, rgba(8,8,8,0.97) 100%)",zIndex:2}} />
         <div className="hero-content" style={{position:"relative",zIndex:3,width:"100%",padding:"0 3rem 5rem",display:"flex",alignItems:"flex-end",justifyContent:"space-between"}}>
           <div className="hero-text">
-            <p className="hero-eyebrow">Japanese Fusion Food · Vila Izabel, Curitiba</p>
+            <p className="hero-eyebrow">Japanese Fusion Food · Curitiba</p>
             <h1 className="hero-title">
               O sushi<br />que alimenta<br /><em>até a alma</em>
             </h1>
