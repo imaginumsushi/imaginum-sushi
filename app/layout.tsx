@@ -51,7 +51,12 @@ const schemaRestaurant = {
   },
   geo: { '@type': 'GeoCoordinates', latitude: -25.424, longitude: -49.266 },
   openingHoursSpecification: [
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], opens: '11:30', closes: '23:30' },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+      opens: '11:30',
+      closes: '23:30',
+    },
   ],
   servesCuisine: ['Japonesa', 'Sushi', 'Temaki', 'Japanese Fusion'],
   priceRange: '$$',
@@ -64,7 +69,22 @@ const schemaRestaurant = {
   sameAs: [
     'https://www.instagram.com/imaginumsushi',
     'https://www.facebook.com/imaginumsushi',
+    'https://www.tripadvisor.com.br/Restaurant_Review-g303441-d3386531-Reviews-Imaginum_Sushi-Curitiba_State_of_Parana.html',
+    'https://imaginumsushi.menudino.com/',
+    'https://wa.me/554130823093',
   ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.7',
+    reviewCount: '2666',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Cardápio Imaginum Sushi',
+    url: 'https://www.imaginumsushi.com.br/cardapio',
+  },
 }
 
 const schemaFaq = {
