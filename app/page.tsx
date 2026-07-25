@@ -223,8 +223,16 @@ export default function Home() {
             </div>
             <div>
               <div className="map-box">
-                <span style={{fontSize:'2rem',opacity:0.3}}>🗺️</span>
-                <p style={{fontSize:'0.78rem',opacity:0.4,textAlign:'center'}}>Insira o iframe do Google Maps<br/>Rua Tabajaras, 714 — Curitiba/PR</p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8!2d-49.2872!3d-25.4241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce4f5b6b6b6b7%3A0x1!2sRua+Tabajaras%2C+714+-+Vila+Izabel%2C+Curitiba+-+PR!5e0!3m2!1spt-BR!2sbr!4v1"
+                  width="100%"
+                  height="100%"
+                  style={{border:0,borderRadius:2}}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Imaginum Sushi — Rua Tabajaras 714, Vila Izabel, Curitiba"
+                />
               </div>
             </div>
           </div>
