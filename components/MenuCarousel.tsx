@@ -51,7 +51,18 @@ function CardCarousel({ item }: { item: MenuItem }) {
 
 const menuDestaques: MenuItem[] = [
   { cat:'Combinados', nome:'Combinado Misto', desc:'Sashimis, uramakis, niguiris e muito mais — a experiência completa', preco:'a partir de R$ 149,00', foto:'/fotos/combinado-misto.jpg' },
-  { cat:'Combinados de Salmão', nome:'Combinado Salmão', desc:'Sashimis, uramakis filadélfia, hossomakis e Joe braseado', preco:'a partir de R$ 99,00', foto:'/fotos/combinado-salmao.jpg' },
+  {
+    cat:'Sobremesas',
+    nome:'Sobremesas',
+    desc:'Petit Gateau, Harumaki de Nutella, Especial do Chef, Hot Romeu e Julieta — para finalizar com doçura',
+    preco:'a partir de R$ 29,00',
+    fotos:[
+      '/fotos/sobremesas/petit-gateau.jpg',
+      '/fotos/sobremesas/harumaki-nutella.jpg',
+      '/fotos/sobremesas/especial-chef.jpg',
+      '/fotos/sobremesas/romeu-julieta.jpg',
+    ],
+  },
   {
     cat:'Sashimis',
     nome:'Sashimis Especiais',
