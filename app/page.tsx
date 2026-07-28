@@ -125,9 +125,67 @@ export default function Home() {
           <h2 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',fontWeight:300,color:'var(--white)',lineHeight:1.15,marginBottom:'0.75rem'}}>
             Há quem chame de <em style={{fontStyle:'italic',color:'var(--gold)'}}>Rodízio</em>
           </h2>
-          <p style={{marginBottom:'3rem',maxWidth:520,fontSize:'0.88rem'}}>
-            Aqui no Imaginum chamamos de Menu Degustação. Individual e para consumo no local. Iniciamos com entradas e seguimos com sushis e sashimis — você escolhe como continuar.
+          <p style={{marginBottom:'2.5rem',maxWidth:560,fontSize:'0.88rem'}}>
+            Aqui no Imaginum chamamos de Menu Degustação. Individual e para consumo no local. Começamos com um mix de entradas e um combinado especial de sushis e sashimis — a partir daí, <strong style={{color:'var(--white)'}}>você repete o que quiser</strong> e ainda pode pedir mais da cozinha.
           </p>
+
+          <div className="degust-steps">
+            <div className="degust-step">
+              <div className="degust-step-photo">
+                <span className="degust-step-num">01</span>
+                <Image src="/fotos/entradas/entradas-mistas.jpg" alt="Entradas do Menu Degustação Imaginum Sushi" fill style={{objectFit:'cover'}} sizes="(max-width:900px) 50vw, 20vw" />
+              </div>
+              <div className="degust-step-body">
+                <p className="degust-step-title">Entradas</p>
+                <p className="degust-step-desc">Ceviche, sunomono, guioza, shitake, edamame e mais opções quentes e frias pra abrir o apetite.</p>
+              </div>
+            </div>
+
+            <div className="degust-step">
+              <div className="degust-step-photo">
+                <span className="degust-step-num">02</span>
+                <Image src="/fotos/combinado-misto.jpg" alt="Combinado de sushis e sashimis do Menu Degustação Imaginum Sushi" fill style={{objectFit:'cover'}} sizes="(max-width:900px) 50vw, 20vw" />
+              </div>
+              <div className="degust-step-body">
+                <p className="degust-step-title">Combinado</p>
+                <p className="degust-step-desc">Chega automaticamente: sashimis, niguiris e uramakis selecionados pela casa.</p>
+              </div>
+            </div>
+
+            <div className="degust-step">
+              <div className="degust-step-photo">
+                <span className="degust-step-badge">Sem<br/>limite</span>
+                <Image src="/fotos/sashimis/sashimi-misto.jpg" alt="Repetição de sashimis e niguiris no Menu Degustação Imaginum Sushi" fill style={{objectFit:'cover'}} sizes="(max-width:900px) 50vw, 20vw" />
+              </div>
+              <div className="degust-step-body">
+                <p className="degust-step-title">Repita à vontade</p>
+                <p className="degust-step-desc">Sashimis, niguiris, uramakis e joes quantas vezes quiser — e ainda pode pedir um temaki à parte.</p>
+              </div>
+            </div>
+
+            <div className="degust-step">
+              <div className="degust-step-photo">
+                <span className="degust-step-num">03</span>
+                <Image src="/fotos/entradas/shitake.jpg" alt="Pratos quentes da cozinha no Menu Degustação Imaginum Sushi" fill style={{objectFit:'cover'}} sizes="(max-width:900px) 50vw, 20vw" />
+              </div>
+              <div className="degust-step-body">
+                <p className="degust-step-title">Mais da cozinha</p>
+                <p className="degust-step-desc">Peça yakissoba, grelhados, tempura, guiozas, arroz e outros pratos quentes sob demanda.</p>
+              </div>
+            </div>
+
+            <div className="degust-step">
+              <div className="degust-step-photo">
+                <span className="degust-step-num">04</span>
+                <Image src="/fotos/sobremesas/harumaki-nutella.jpg" alt="Sobremesas do Menu Degustação Imaginum Sushi" fill style={{objectFit:'cover'}} sizes="(max-width:900px) 100vw, 20vw" />
+              </div>
+              <div className="degust-step-body">
+                <p className="degust-step-title">Doces</p>
+                <p className="degust-step-desc">Uramaki Romeu e Julieta, harumaki de Nutella, hot banana e mais pra fechar com chave de ouro.</p>
+              </div>
+            </div>
+          </div>
+
           <div className="degust-grid">
             <div className="degust-item">
               <p className="degust-label" style={{color:'var(--gold)'}}>Almoço</p>

@@ -187,6 +187,19 @@ p { color: var(--gray); line-height: 1.7; }
 .degust-price { font-family: var(--font-display); font-size: 2.8rem; font-weight: 300; color: var(--gold); line-height: 1; }
 .degust-per { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(245,242,237,0.4); margin-top: 6px; }
 
+.degust-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: rgba(245,242,237,0.08); margin-bottom: 3rem; }
+.degust-step { background: #0d0d0d; }
+.degust-step-photo { position: relative; aspect-ratio: 3/4; overflow: hidden; }
+.degust-step-num { position: absolute; top: 10px; left: 12px; font-family: var(--font-display); font-size: 1.3rem; color: var(--white); opacity: 0.65; z-index: 2; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+.degust-step-badge {
+  position: absolute; top: 10px; right: 10px; background: var(--gold); color: var(--black);
+  font-size: 0.58rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;
+  padding: 4px 8px; border-radius: 2px; z-index: 2; line-height: 1.2; text-align: right;
+}
+.degust-step-body { padding: 1.1rem 1rem 1.4rem; }
+.degust-step-title { font-family: var(--font-display); font-size: 1rem; color: var(--white); margin-bottom: 0.4rem; font-weight: 400; }
+.degust-step-desc { font-size: 0.74rem; line-height: 1.55; }
+
 /* ── FAQ ── */
 .faq-item { border-bottom: 1px solid rgba(245,242,237,0.08); }
 .faq-q {
@@ -264,5 +277,8 @@ p { color: var(--gray); line-height: 1.7; }
   .sobre-grid, .local-grid { grid-template-columns: 1fr; gap: 3rem; }
   .menu-grid { grid-template-columns: 1fr; }
   .degust-grid { grid-template-columns: 1fr; }
+  .degust-steps { grid-template-columns: 1fr 1fr; }
+  .degust-steps .degust-step:last-child { grid-column: 1 / -1; }
+  .degust-steps .degust-step:last-child .degust-step-photo { aspect-ratio: 16/7; }
   .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 }
