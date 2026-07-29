@@ -129,6 +129,12 @@ export default function Home() {
             Aqui no Imaginum chamamos de Menu Degustação. Individual e para consumo no local. Começamos com um mix de entradas e um combinado especial de sushis e sashimis — a partir daí, <strong style={{color:'var(--white)'}}>você repete o que quiser</strong> e ainda pode pedir mais da cozinha.
           </p>
 
+          <div className="degust-banner">
+            <Image src="/fotos/rodizio-completo.jpg" alt="Mesa completa do Menu Degustação Imaginum Sushi Curitiba" fill style={{objectFit:'cover'}} sizes="(max-width:900px) 100vw, 1100px" />
+            <div className="degust-banner-overlay" />
+            <p className="degust-banner-caption">A experiência completa, direto na sua mesa</p>
+          </div>
+
           <div className="degust-steps">
             <div className="degust-step">
               <div className="degust-step-photo">
