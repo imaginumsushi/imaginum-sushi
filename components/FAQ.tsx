@@ -8,7 +8,7 @@ const faqs = [
   { q: 'Como fazer reservas?', a: 'Via WhatsApp (41) 3082-3093. Recomendamos reservar com antecedência nos fins de semana.' },
   { q: 'Quais formas de pagamento são aceitas?', a: 'Dinheiro, Pix, cartão de crédito e débito de todas as bandeiras.' },
   { q: 'Tem opções vegetarianas?', a: 'Sim! Temos temakis e uramakis vegetarianos com pepino, abacate, legumes e muito mais. Consulte nosso cardápio completo.' },
-  { q: 'O que é o Menu Degustação?', a: 'Nosso rodízio exclusivo. Almoço seg–sex R$ 189,90/pessoa; Jantar seg–qui R$ 199,90/pessoa; Sex, sáb e feriados R$ 219,90/pessoa. Individual e para consumo no local.' },
+  { q: 'O que é o Menu Degustação?', a: 'Nosso rodízio exclusivo. Almoço seg–sex R$ 189,90/pessoa; Jantar seg–qui R$ 209,90/pessoa; Sex, sáb e feriados R$ 219,90/pessoa. Individual e para consumo no local.' },
   { q: 'Que tipo de culinária o Imaginum Sushi serve?', a: 'Japanese Fusion Food: combinados, temakis artesanais, hot rolls, sashimis, yakissoba, bentô box e sobremesas japonesas.' },
 ]
 

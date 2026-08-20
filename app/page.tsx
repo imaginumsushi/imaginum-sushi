@@ -202,7 +202,7 @@ export default function Home() {
             <div className="degust-item">
               <p className="degust-label" style={{color:'#3c64b4'}}>Jantar</p>
               <p className="degust-period">Seg–Qui<br/><span style={{fontSize:'0.72rem',opacity:0.6}}>exceto feriados</span></p>
-              <p className="degust-price">199<span style={{fontSize:'1.4rem'}}>,90</span></p>
+              <p className="degust-price">209<span style={{fontSize:'1.4rem'}}>,90</span></p>
               <p className="degust-per">por pessoa</p>
             </div>
             <div className="degust-item">

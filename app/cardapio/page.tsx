@@ -277,7 +277,7 @@ export default function Cardapio() {
                 <div style={{background:'var(--dark)',padding:'1.5rem',textAlign:'center'}}>
                   <p style={{fontSize:'0.72rem',textTransform:'uppercase',letterSpacing:'0.12em',color:'var(--blue)',marginBottom:'0.5rem',fontWeight:600}}>Jantar</p>
                   <p style={{fontSize:'0.84rem',color:'rgba(255,255,255,0.6)',marginBottom:'0.75rem'}}>Seg–Qui<br/><span style={{fontSize:'0.75rem'}}>exceto feriados</span></p>
-                  <p style={{fontFamily:'var(--font-display)',fontSize:'1.6rem',color:'var(--gold)',fontWeight:700}}>R$ 199,90</p>
+                  <p style={{fontFamily:'var(--font-display)',fontSize:'1.6rem',color:'var(--gold)',fontWeight:700}}>R$ 209,90</p>
                   <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)'}}>por pessoa</p>
                 </div>
                 <div style={{background:'var(--dark)',padding:'1.5rem',textAlign:'center'}}>
