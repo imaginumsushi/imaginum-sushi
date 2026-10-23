@@ -10,7 +10,7 @@ const serif = Cormorant_Garamond({ subsets: ['latin'], weight: ['500', '600', '7
 export const metadata: Metadata = {
   title: { absolute: 'Reserva Menu Degustação R$ 179,90 | Imaginum Sushi Curitiba' },
   description:
-    'Menu Degustação Imaginum de R$ 209 por R$ 179,90 por pessoa. Segunda a quarta, exceto feriados, somente com reserva. Garanta sua mesa online.',
+    'Menu Degustação Imaginum por R$ 179,90 por pessoa. Segunda a quarta, exceto feriados, somente com reserva online. Garanta sua mesa.',
   alternates: { canonical: '/reserva' },
   openGraph: {
     title: 'Menu Degustação por R$ 179,90 — reserve sua mesa',
