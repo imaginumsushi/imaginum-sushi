@@ -169,8 +169,12 @@ export default function ReservaForm() {
       // ---- conversões ----
       track('Schedule', { value: conf.valor, currency: 'BRL', content_name: 'Menu Degustação 179,90', num_items: conf.pessoas }, conf.codigo);
       try {
-        window.gtag?.('event', 'generate_lead', { value: conf.valor, currency: 'BRL', reserva_id: conf.codigo, pessoas: conf.pessoas, turno: conf.turno });
         window.dataLayer = window.dataLayer || [];
+        // O GA4 do site é carregado pelo Google Tag Manager, que não expõe window.gtag.
+        // Este atalho envia o evento pela mesma fila (dataLayer) que o Google tag já escuta.
+        // eslint-disable-next-line prefer-rest-params
+        if (!window.gtag) window.gtag = function () { (window.dataLayer as unknown[]).push(arguments); };
+        window.gtag('event', 'generate_lead', { value: conf.valor, currency: 'BRL', reserva_id: conf.codigo, pessoas: conf.pessoas, turno: conf.turno });
         window.dataLayer.push({ event: 'reserva_confirmada', reserva_id: conf.codigo, value: conf.valor, currency: 'BRL', pessoas: conf.pessoas, turno: conf.turno, data_reserva: conf.data });
       } catch { /* noop */ }
       window.scrollTo({ top: 0, behavior: 'smooth' });
