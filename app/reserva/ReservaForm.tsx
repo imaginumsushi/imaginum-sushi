@@ -136,7 +136,6 @@ export default function ReservaForm() {
   const dia = useMemo(() => cal?.datas.find((d) => d.data === data), [cal, data]);
   const turno = useMemo(() => dia?.turnos.find((t) => t.id === turnoId), [dia, turnoId]);
   const preco = cal?.preco_pessoa ?? 179.9;
-  const precoCheio = cal?.preco_cheio ?? 209;
   const maxPorReserva = cal?.max_pessoas_reserva ?? 20;
   const whats = cal?.whatsapp_restaurante || WHATS_PADRAO;
   const maxPessoas = Math.max(1, Math.min(maxPorReserva, turno?.vagas ?? maxPorReserva));
@@ -225,7 +224,7 @@ export default function ReservaForm() {
         <p className={s.kicker}>Imaginum Sushi · Curitiba</p>
         <h1 className={s.titulo}>Menu Degustação</h1>
         <p className={s.preco}>
-          <span className={s.de}>de {brl(precoCheio)}</span> por <strong>{brl(preco)}</strong> <span className={s.pp}>por pessoa</span>
+          <strong>{brl(preco)}</strong> <span className={s.pp}>por pessoa</span>
         </p>
         <p className={s.regras}>Segunda a quarta · 11h30 às 23h30 · exceto feriados · <b>válido somente com reserva</b></p>
       </header>
