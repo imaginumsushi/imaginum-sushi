@@ -4,6 +4,7 @@ import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
+import { PromoHero, PromoSecao } from '@/components/PromoDegustacao'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
               Ingredientes frescos selecionados diariamente.<br />
               Rua Tabajaras, 714 — desde 2013.
             </p>
+            <PromoHero />
             <div className="hero-actions">
               <a href="https://imaginumsushi.menudino.com/" target="_blank" rel="noopener noreferrer" className="btn-hero-primary">
                 Peça Aqui
@@ -128,6 +130,8 @@ export default function Home() {
           <p style={{marginBottom:'2.5rem',maxWidth:560,fontSize:'0.88rem'}}>
             Aqui no Imaginum chamamos de Menu Degustação. Individual e para consumo no local. Começamos com um mix de entradas e um combinado especial de sushis e sashimis — a partir daí, <strong style={{color:'var(--white)'}}>você repete o que quiser</strong> e ainda pode pedir mais da cozinha.
           </p>
+
+          <PromoSecao texto="Quero aproveitar a promoção" origem="home_degustacao" />
 
           <div className="degust-banner">
             <Image src="/fotos/rodizio-completo.jpg" alt="Mesa completa do Menu Degustação Imaginum Sushi Curitiba" fill style={{objectFit:'cover'}} sizes="(max-width:900px) 100vw, 1100px" />
