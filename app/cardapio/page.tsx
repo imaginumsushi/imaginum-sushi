@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { PromoSecao } from '@/components/PromoDegustacao'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
@@ -287,7 +288,7 @@ export default function Cardapio() {
                   <p style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)'}}>por pessoa</p>
                 </div>
               </div>
-              <a href="tel:+554130823093" className="btn btn-gold">Reservar para o Degustação</a>
+              <PromoSecao texto="Reservar com preço promocional" origem="cardapio_degustacao" />
             </div>
           </div>
         </section>
