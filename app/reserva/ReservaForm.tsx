@@ -183,7 +183,6 @@ export default function ReservaForm() {
 
   /* ---------- tela de confirmação ---------- */
   if (ok) {
-    const msg = `Olá! Fiz a reserva *${ok.codigo}* do Menu Degustação R$ 179,90 para *${ok.pessoas} ${ok.pessoas > 1 ? 'pessoas' : 'pessoa'}* — ${ok.dia}, ${ddmm(ok.data)} às ${ok.chegada}. Nome: ${nome}.`;
     const ymd = ok.data.replace(/-/g, '');
     const gcal = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('Imaginum Sushi — Menu Degustação')}&dates=${ymd}T${ok.chegada.replace(':', '')}00/${ymd}T${somaHoras(ok.chegada, 2)}&ctz=America/Sao_Paulo&details=${encodeURIComponent(`Reserva ${ok.codigo} · ${ok.pessoas} pessoa(s)`)}`;
     return (
@@ -199,10 +198,7 @@ export default function ReservaForm() {
             <li><span>Pessoas</span><b>{ok.pessoas}</b></li>
             <li><span>Menu Degustação</span><b>{brl(ok.valor)} <small>({brl(preco)} p/ pessoa)</small></b></li>
           </ul>
-          <a className={s.btn} href={`https://wa.me/${ok.whatsapp_restaurante || whats}?text=${encodeURIComponent(msg)}`} target="_blank" rel="noopener noreferrer">
-            Confirmar pelo WhatsApp
-          </a>
-          <a className={s.btnSec} href={gcal} target="_blank" rel="noopener noreferrer">Adicionar à minha agenda</a>
+          <a className={s.btn} href={gcal} target="_blank" rel="noopener noreferrer">Adicionar à minha agenda</a>
           <p className={s.nota}>Apresente o código <b>{ok.codigo}</b> ao chegar. Para cancelar ou alterar, fale conosco pelo WhatsApp.</p>
         </section>
       </main>
