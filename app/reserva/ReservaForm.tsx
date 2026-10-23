@@ -226,7 +226,7 @@ export default function ReservaForm() {
         <p className={s.preco}>
           <strong>{brl(preco)}</strong> <span className={s.pp}>por pessoa</span>
         </p>
-        <p className={s.regras}>Segunda a quarta · 11h30 às 23h30 · exceto feriados · <b>válido somente com reserva</b></p>
+        <p className={s.regras}>Segunda a quarta · reservas das 11h30 às 19h30 · exceto feriados · <b>válido somente com reserva</b></p>
       </header>
 
       {erroCal && (
