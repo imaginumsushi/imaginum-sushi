@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import PromoBarMobile from '@/components/PromoBarMobile'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -130,6 +131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
         {children}
+        <PromoBarMobile />
       </body>
     </html>
   )
