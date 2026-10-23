@@ -40,16 +40,7 @@ function naoConfigurado() {
 }
 
 // GET /api/reserva → datas, turnos, horários e vagas
-export async function GET(req: NextRequest) {
-  // DIAGNÓSTICO TEMPORÁRIO do GA4 (remover depois): não mostra a chave, só tamanho e impressão digital
-  if (req.nextUrl.searchParams.get('diag') === 'ga4-7319') {
-    let hs = 0;
-    for (const c of GA_SECRET) hs = (hs * 31 + (c.codePointAt(0) || 0)) >>> 0;
-    const corpo = JSON.stringify({ client_id: '555.777', events: [{ name: 'teste_diag_mp', params: { engagement_time_msec: 1 } }] });
-    const dbg = await fetch('https://www.google-analytics.com/debug/mp/collect?measurement_id=' + GA_ID + '&api_secret=' + GA_SECRET, { method: 'POST', body: corpo, cache: 'no-store' }).then((r) => r.json()).catch((e) => String(e));
-    const prod = await fetch('https://www.google-analytics.com/mp/collect?measurement_id=' + GA_ID + '&api_secret=' + GA_SECRET, { method: 'POST', body: corpo, cache: 'no-store' }).then((r) => r.status).catch((e) => String(e));
-    return NextResponse.json({ tamanho: GA_SECRET.length, impressao: hs, gaId: GA_ID, debug: dbg, envio: prod });
-  }
+export async function GET() {
   if (!API || !TOKEN) return naoConfigurado();
   try {
     const r = await fetch(`${API}?action=calendario&token=${encodeURIComponent(TOKEN)}`, {
