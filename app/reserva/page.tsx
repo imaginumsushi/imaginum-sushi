@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/reserva' },
   openGraph: {
     title: 'Menu Degustação por R$ 179,90 — reserve sua mesa',
-    description: 'Segunda a quarta, das 11h30 às 23h30. Válido somente com reserva.',
+    description: 'Segunda a quarta, reservas das 11h30 às 19h30. Válido somente com reserva.',
     url: '/reserva',
     type: 'website',
     locale: 'pt_BR',
