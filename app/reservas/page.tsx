@@ -22,6 +22,13 @@ export default function Reservas() {
               Recomendamos reservar com antecedência, especialmente nos fins de semana.
             </p>
 
+            {/* Promoção Menu Degustação — leva para a reserva online */}
+            <a href="/reserva" style={{display:'block',marginTop:'1.75rem',padding:'1.25rem 1.5rem',borderRadius:14,border:'1px solid #dca03c',background:'rgba(220,160,60,.10)',textDecoration:'none',color:'inherit'}}>
+              <span style={{display:'block',fontSize:'.75rem',letterSpacing:'.15em',textTransform:'uppercase',color:'#dca03c'}}>Promoção · segunda a quarta</span>
+              <strong style={{display:'block',fontSize:'1.25rem',marginTop:'.35rem'}}>Menu Degustação de R$ 209 por R$ 179,90 por pessoa</strong>
+              <span style={{display:'block',marginTop:'.35rem',opacity:.85}}>Válido somente com reserva online, exceto feriados. Reserve aqui →</span>
+            </a>
+
             <div style={{display:'flex',flexDirection:'column',gap:'1.5rem',marginTop:'2.5rem'}}>
 
               <div style={{background:'rgba(37,211,102,0.08)',border:'1.5px solid rgba(37,211,102,0.3)',borderRadius:12,padding:'1.75rem'}}>
